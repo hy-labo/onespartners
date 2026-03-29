@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | hy_labo</title>
+  <meta name="description" content="hy_laboへのお問い合わせ。初回相談は無償です。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">hy<span>_labo</span></a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="service.html">Service</a></li>
+    <li><a href="column.html">Column</a></li>
+    <li><a href="contact.html" class="nav-cta">お問い合わせ</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="page-hero-eyebrow">Contact</p>
+    <h1 class="page-hero-title">お問い合わせ</h1>
+  </div>
+</div>
+
+<section class="contact-section">
+  <div class="section-inner">
+    <div class="contact-grid">
+
+      <!-- LEFT INFO -->
+      <div class="contact-info">
+        <h2 class="contact-info-title">まずはご相談<br>ください。</h2>
+        <p class="contact-info-lead">
+          サービスへのご質問・ご相談はお気軽にどうぞ。<br>
+          初回相談（60分）は無償で承ります。<br>
+          通常2営業日以内にご返信します。
+        </p>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📍</div>
+          <div>
+            <p style="font-weight:500; font-size:0.88rem; color:var(--navy); margin-bottom:2px;">拠点</p>
+            <p style="font-size:0.85rem; color:var(--text-mid);">兵庫県姫路市（リモート対応可）</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">💻</div>
+          <div>
+            <p style="font-weight:500; font-size:0.88rem; color:var(--navy); margin-bottom:2px;">対応エリア</p>
+            <p style="font-size:0.85rem; color:var(--text-mid);">全国（オンライン） / 関西（対面応相談）</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📝</div>
+          <div>
+            <p style="font-weight:500; font-size:0.88rem; color:var(--navy); margin-bottom:2px;">note</p>
+            <p style="font-size:0.85rem; color:var(--text-mid);">
+              <a href="https://note.com/hy_labo" target="_blank" rel="noopener" style="color:var(--blue); text-decoration:none;">note.com/hy_labo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT FORM -->
+      <!--
+        Formspreeの設定：
+        1. https://formspree.io でアカウント作成
+        2. エンドポイントURLを取得
+        3. action属性を書き換える
+      -->
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+      >
+        <div class="form-group">
+          <label class="form-label" for="company">会社名・屋号</label>
+          <input class="form-input" type="text" id="company" name="company" placeholder="株式会社〇〇">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="name">お名前<span class="form-req">必須</span></label>
+          <input class="form-input" type="text" id="name" name="name" required placeholder="山田 太郎">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">メールアドレス<span class="form-req">必須</span></label>
+          <input class="form-input" type="email" id="email" name="email" required placeholder="example@company.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="service">ご関心のあるサービス</label>
+          <select class="form-select" id="service" name="service">
+            <option value="">選択してください</option>
+            <option value="S-1">S-1 経営参謀アドバイザリー（月次顧問）</option>
+            <option value="S-2">S-2 経営数字・自走化プログラム（勉強会）</option>
+            <option value="S-3">S-3 経営管理レビュー（単発）</option>
+            <option value="other">その他・まずは相談したい</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">ご相談内容<span class="form-req">必須</span></label>
+          <textarea class="form-textarea" id="message" name="message" required placeholder="現在の課題やご状況をお聞かせください。"></textarea>
+        </div>
+        <button type="submit" class="form-submit">送信する →</button>
+        <p style="font-size:0.78rem; color:var(--text-light); line-height:1.7;">
+          ご入力いただいた情報はお問い合わせへの返信のみに使用します。第三者への提供は行いません。
+        </p>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="footer-logo">hy<span>_labo</span></a>
+        <p class="footer-desc">数字で経営を動かす、経営参謀。</p>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="column.html">Column</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <p class="footer-copy">© 2026 hy_labo / H.Yamasaki. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
