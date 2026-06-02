@@ -9,6 +9,15 @@
 </head>
 <body>
 
+<!-- TOP BAR -->
+<div class="topbar">
+  <p class="topbar-brand">hy_labo &nbsp;|&nbsp; 経営参謀コンサルティング（姫路市）</p>
+  <div class="topbar-right">
+    <span class="topbar-badge">初回相談（60分）無償</span>
+    <a href="contact.html" class="topbar-link">お問い合わせはこちら →</a>
+  </div>
+</div>
+
 <!-- NAV -->
 <nav>
   <a href="index.html" class="nav-logo">hy<span>_labo</span></a>
@@ -20,8 +29,17 @@
   </ul>
 </nav>
 
-<!-- HERO -->
+<!-- HERO SLIDER -->
 <div class="hero">
+  <div class="hero-slider">
+    <div class="hero-slide active"
+      style="background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80')"></div>
+    <div class="hero-slide"
+      style="background-image:url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80')"></div>
+    <div class="hero-slide"
+      style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80')"></div>
+  </div>
+  <div class="hero-overlay"></div>
   <div class="hero-grid">
     <p class="hero-eyebrow">J-SOX 内部監査の専門家</p>
     <h1 class="hero-title">
@@ -38,109 +56,63 @@
       <a href="contact.html" class="btn-secondary">無償相談を予約</a>
     </div>
   </div>
+  <div class="hero-dots">
+    <span class="hero-dot active"></span>
+    <span class="hero-dot"></span>
+    <span class="hero-dot"></span>
+  </div>
 </div>
 
-
-<!-- J-SOX HIGHLIGHT -->
-<section style="background:#fff; border-bottom:1px solid var(--border);">
+<!-- SERVICE BOXES -->
+<section class="svc-section">
   <div class="section-inner">
-    <p class="section-eyebrow">J-SOX 内部監査</p>
-    <h2 class="section-title">こんな課題、ありませんか？</h2>
-    <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-bottom:40px;">
-      <div style="background:var(--bg-blue); border-radius:12px; padding:24px; font-size:0.88rem; color:var(--text-mid); line-height:1.8; border:1px solid rgba(15,87,251,0.1);">
-        <strong style="color:var(--navy); display:block; margin-bottom:6px;">専任担当者の採用コストが重い</strong>
-        内部監査担当者を採用すると月¥92万〜のコスト。上場したばかりでそこまでの規模感ではない。
-      </div>
-      <div style="background:var(--bg-blue); border-radius:12px; padding:24px; font-size:0.88rem; color:var(--text-mid); line-height:1.8; border:1px solid rgba(15,87,251,0.1);">
-        <strong style="color:var(--navy); display:block; margin-bottom:6px;">初めてのJ-SOX対応で何から始めるか分からない</strong>
-        上場後、初年度。3点セット整備も初めてで社内にノウハウがない。
-      </div>
-      <div style="background:var(--bg-blue); border-radius:12px; padding:24px; font-size:0.88rem; color:var(--text-mid); line-height:1.8; border:1px solid rgba(15,87,251,0.1);">
-        <strong style="color:var(--navy); display:block; margin-bottom:6px;">監査法人に指摘されても社内に直せる人がいない</strong>
-        3点セット（業務記述書・フロー・RCM）の不備を指摘されるが、修正対応できる人材がいない。
-      </div>
-      <div style="background:var(--bg-blue); border-radius:12px; padding:24px; font-size:0.88rem; color:var(--text-mid); line-height:1.8; border:1px solid rgba(15,87,251,0.1);">
-        <strong style="color:var(--navy); display:block; margin-bottom:6px;">IPO準備中、内部統制整備の優先度が上がっている</strong>
-        主幹事証券・監査法人から整備を求められているが、CFO一人では対応しきれない。
-      </div>
-    </div>
-    <div style="background:var(--bg-blue); border:2px solid var(--blue); border-radius:16px; padding:36px; display:flex; gap:32px; align-items:center; flex-wrap:wrap;">
-      <div style="flex:1; min-width:260px;">
-        <p style="font-family:'Noto Serif JP',serif; font-size:1.15rem; font-weight:700; color:var(--navy); line-height:1.7; margin-bottom:12px;">J-SOX内部監査を、外部の専任担当として引き受けます。</p>
-        <p style="font-size:0.88rem; color:var(--text-mid); line-height:1.9;">監査計画の立案から3点セット整備・評価・報告まで一気通貫。採用コスト¥92万/月〜に対して<strong style="color:var(--blue);">¥75万/月〜</strong>で即戦力を確保できます。</p>
-      </div>
-      <a href="service.html" class="btn-primary" style="flex-shrink:0;">詳しく見る</a>
+    <p class="section-eyebrow" style="text-align:center;">Service</p>
+    <h2 class="section-title" style="text-align:center;">提供するサービス</h2>
+    <p style="text-align:center; font-size:0.92rem; color:var(--text-mid); margin-bottom:44px; line-height:2;">
+      J-SOX内部監査を中心に、管理会計・経営管理の支援も行います。
+    </p>
+    <div class="svc-boxes">
+      <a href="service.html" class="svc-box svc-box--main">
+        <span class="svc-box-num">S-4</span>
+        <span class="svc-box-name">J-SOX 内部監査<br>外注サービス</span>
+        <span class="svc-box-price">¥75万 / 月〜</span>
+      </a>
+      <a href="service.html" class="svc-box">
+        <span class="svc-box-num">S-1</span>
+        <span class="svc-box-name">経営参謀<br>アドバイザリー</span>
+        <span class="svc-box-price">月額 ¥15万〜</span>
+      </a>
+      <a href="service.html" class="svc-box">
+        <span class="svc-box-num">S-2</span>
+        <span class="svc-box-name">経営数字<br>自走化プログラム</span>
+        <span class="svc-box-price">4回 ¥30万</span>
+      </a>
+      <a href="service.html" class="svc-box">
+        <span class="svc-box-num">S-3</span>
+        <span class="svc-box-name">経営管理<br>レビュー</span>
+        <span class="svc-box-price">¥8万 / 回</span>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- SERVICES -->
-<section class="bg-gray">
-  <div class="section-inner">
-    <p class="section-eyebrow">Service</p>
-    <h2 class="section-title">提供するサービス</h2>
-    <p class="section-lead">
-      J-SOX内部監査を中心に、管理会計・経営管理の支援も行います。
+<!-- HORROR / PAIN POINTS -->
+<section class="horror-section">
+  <div class="section-inner" style="text-align:center;">
+    <h2 class="horror-title">あなたの会社の<br>J-SOX対応は大丈夫？</h2>
+    <div class="horror-list">
+      <div class="horror-item">● &nbsp;内部監査の専任担当者がいない…</div>
+      <div class="horror-item">● &nbsp;3点セット（業務記述書・フロー・RCM）を整備したことがない…</div>
+      <div class="horror-item">● &nbsp;監査法人から指摘を受けたが、社内で修正できる人がいない…</div>
+      <div class="horror-item">● &nbsp;IPO準備中で内部統制整備が追いついていない…</div>
+      <div class="horror-item">● &nbsp;専任担当者を採用すると月92万円以上のコストがかかる…</div>
+      <div class="horror-item">● &nbsp;毎年の監査対応に担当者が追われ、本来業務に集中できない…</div>
+    </div>
+    <p class="horror-cta-text">
+      J-SOXにこんな課題が出たらご相談を！<br>
+      まずは初回相談（60分）無償でお話しします。
     </p>
-
-    <div class="service-grid">
-
-      <div class="service-card" style="border-top: 3px solid var(--blue);">
-        <div class="service-icon"><img src="images/icon-s3.png" alt="内部監査" style="width:40px;height:40px;object-fit:contain;"></div>
-        <p class="service-num">S-4</p>
-        <h3 class="service-name">J-SOX 内部監査<br>外注サービス</h3>
-        <p class="service-sub">年間顧問 / 上場企業・IPO準備企業向け</p>
-        <p class="service-desc">
-          J-SOXに特化した内部監査の外部委託。監査計画の立案から
-          3点セット整備・監査報告まで一気通貫で対応。
-          専任担当者を雇わずに内部監査体制を整備できます。
-        </p>
-        <span class="service-price">¥75万/月〜（基本パック）</span>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon"><img src="images/icon-s1.png" alt="経営参謀" style="width:40px;height:40px;object-fit:contain;"></div>
-        <p class="service-num">S-1</p>
-        <h3 class="service-name">経営参謀<br>アドバイザリー</h3>
-        <p class="service-sub">月次顧問 / 経営者・後継者向け</p>
-        <p class="service-desc">
-          月1〜2回のオンライン面談を通じて、経営課題の構造化・
-          意思決定の壁打ち・管理会計と戦略統制の観点から助言。
-          経営者が自ら判断できる軸を一緒に作ります。
-        </p>
-        <span class="service-price">月額 15万円〜</span>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon"><img src="images/icon-s2.png" alt="自走化プログラム" style="width:40px;height:40px;object-fit:contain;"></div>
-        <p class="service-num">S-2</p>
-        <h3 class="service-name">経営数字<br>自走化プログラム</h3>
-        <p class="service-sub">全4回シリーズ / 幹部・管理部門向け</p>
-        <p class="service-desc">
-          管理会計の基礎からKPI設計・予実管理の定着まで、
-          社内チームが自走できるようになる勉強会シリーズ。
-          各回に実践課題を設け、社内に「考える習慣」を根づかせます。
-        </p>
-        <span class="service-price">4回 30万円</span>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon"><img src="images/icon-s3.png" alt="レビュー" style="width:40px;height:40px;object-fit:contain;"></div>
-        <p class="service-num">S-3</p>
-        <h3 class="service-name">経営管理<br>レビュー</h3>
-        <p class="service-sub">単発スポット / 管理部門担当者向け</p>
-        <p class="service-desc">
-          社内チームが作成した管理会計・KPI・内部統制等の成果物に
-          「何が足りないか」「どこを直すか」をフィードバック。
-        </p>
-        <span class="service-price">8万円 / 回</span>
-      </div>
-
-    </div>
-
-    <div style="text-align:center; margin-top:48px;">
-      <a href="service.html" class="btn-primary">サービス詳細を見る</a>
-    </div>
+    <a href="contact.html" class="btn-primary">お問い合わせはこちら</a>
   </div>
 </section>
 
@@ -244,10 +216,10 @@
 </section>
 
 <!-- CTA -->
-<section style="background:var(--bg-blue); text-align:center; border-top:1px solid var(--border);">
+<section style="background:var(--bg-alt); text-align:center; border-top:1px solid var(--border);">
   <div class="section-inner">
-    <p style="font-size:0.78rem; font-weight:600; letter-spacing:0.15em; color:var(--blue); text-transform:uppercase; margin-bottom:20px;">Contact</p>
-    <h2 style="font-family:'Noto Serif JP',serif; font-size:clamp(1.6rem,2.5vw,2.4rem); font-weight:700; color:var(--navy); margin-bottom:20px;">
+    <p style="font-size:0.72rem; font-weight:600; letter-spacing:0.2em; color:var(--accent); text-transform:uppercase; margin-bottom:20px;">Contact</p>
+    <h2 style="font-family:'Noto Serif JP',serif; font-size:clamp(1.6rem,2.5vw,2.4rem); font-weight:700; color:var(--text); margin-bottom:20px;">
       まずはご相談から
     </h2>
     <p style="font-size:0.95rem; color:var(--text-mid); margin-bottom:40px; line-height:2;">
@@ -275,6 +247,46 @@
     <p class="footer-copy">© 2026 hy_labo / H.Yamasaki. All rights reserved.</p>
   </div>
 </footer>
+
+<script>
+(function(){
+  var slides = document.querySelectorAll('.hero-slide');
+  var dots   = document.querySelectorAll('.hero-dot');
+  var total  = slides.length;
+  var cur    = 0;
+
+  function goTo(next) {
+    var prev = cur;
+    cur = next;
+    slides[prev].classList.remove('active');
+    slides[prev].classList.add('prev');
+    slides[cur].classList.add('active');
+    dots[prev].classList.remove('active');
+    dots[cur].classList.add('active');
+    setTimeout(function(){
+      slides[prev].style.transition = 'none';
+      slides[prev].classList.remove('prev');
+      void slides[prev].offsetWidth;
+      slides[prev].style.transition = '';
+    }, 1100);
+  }
+
+  var timer = setInterval(function(){
+    goTo((cur + 1) % total);
+  }, 4000);
+
+  dots.forEach(function(dot, i){
+    dot.addEventListener('click', function(){
+      if (i === cur) return;
+      clearInterval(timer);
+      goTo(i);
+      timer = setInterval(function(){
+        goTo((cur + 1) % total);
+      }, 4000);
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
