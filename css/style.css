@@ -42,10 +42,10 @@ body {
 /* ══ TOP BAR ═══════════════════════════════════════ */
 .topbar {
   position: fixed;
-  top: 0;
+  top: 68px;
   left: 0;
   right: 0;
-  z-index: 210;
+  z-index: 199;
   background: #f5ede0;
   border-bottom: 1px solid #e4d8c8;
   padding: 0 48px;
@@ -91,7 +91,7 @@ body {
 /* ══ NAV ══════════════════════════════════════════ */
 nav {
   position: fixed;
-  top: 44px;
+  top: 0;
   left: 0; right: 0;
   height: 68px;
   display: flex;
