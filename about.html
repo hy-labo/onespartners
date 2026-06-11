@@ -19,8 +19,9 @@
   </ul>
 </nav>
 
-<div class="page-hero">
-  <div class="page-hero-inner">
+<div class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=1600&q=80'); background-size:cover; background-position:center; position:relative; overflow:hidden;">
+  <div style="position:absolute; inset:0; background:rgba(250,249,247,0.87); z-index:0; pointer-events:none;"></div>
+  <div class="page-hero-inner" style="position:relative; z-index:1;">
     <p class="page-hero-eyebrow">About</p>
     <h1 class="page-hero-title">コンサルタント紹介</h1>
   </div>
@@ -84,15 +85,15 @@
       </p>
     </div>
     <div class="philosophy-points">
-      <div class="philosophy-point">
+      <div class="philosophy-point fade-up d-1">
         <p class="pp-num">01 — 現場を知る。だから設計できる。</p>
         <p class="pp-text">Accentureでの業務プロセス改善・経営管理コンサルと、事業会社での内部統制・J-SOX実務から「現場でどう動かすか」を熟知している。だから、机上論ではなく、実務に直結した仕組みを設計できる。</p>
       </div>
-      <div class="philosophy-point">
+      <div class="philosophy-point fade-up d-2">
         <p class="pp-num">02 — 理論と実務を統合する。</p>
         <p class="pp-text">BSC・管理会計・戦略統制論の学術的フレームと、コンサル・事業会社での実務経験を組み合わせて支援する。再現性のある設計を提供する。</p>
       </div>
-      <div class="philosophy-point">
+      <div class="philosophy-point fade-up d-3">
         <p class="pp-num">03 — 経営者の隣に立つ。</p>
         <p class="pp-text">問いを立て、選択肢を整理し、経営者が決断できる状態をつくる存在。答えを押しつけるのではなく、経営者自身の判断力を高めることを目指す。</p>
       </div>
@@ -118,5 +119,19 @@
   </div>
 </footer>
 
+<script>
+(function(){
+  if (!window.IntersectionObserver) {
+    document.querySelectorAll('.fade-up').forEach(function(el){ el.classList.add('is-visible'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting) { entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+  document.querySelectorAll('.fade-up').forEach(function(el){ io.observe(el); });
+})();
+</script>
 </body>
 </html>
