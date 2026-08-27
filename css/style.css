@@ -1,5 +1,5 @@
 /* hy_labo — style.css v3 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600;700&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap');
 
 :root {
   /* ── 新パレット ── */
@@ -124,10 +124,12 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  font-size: 0.88rem;
-  font-weight: 400;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  font-weight: 600;
   color: var(--text-mid);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   transition: color 0.2s;
 }
 
