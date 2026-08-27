@@ -15,6 +15,7 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="service.html">Service</a></li>
+    <li><a href="process.html">Process</a></li>
     <li><a href="column.html">Column</a></li>
     <li><a href="contact.html" class="nav-cta">お問い合わせ</a></li>
   </ul>
@@ -65,49 +66,61 @@
       </div>
 
       <!-- RIGHT FORM -->
-      <!--
-        Formspreeの設定：
-        1. https://formspree.io でアカウント作成
-        2. エンドポイントURLを取得
-        3. action属性を書き換える
-      -->
-      <form
-        class="contact-form"
-        action="https://formspree.io/f/YOUR_FORM_ID"
-        method="POST"
-      >
+      <form class="contact-form" id="contactForm" onsubmit="sendMail(event)">
         <div class="form-group">
           <label class="form-label" for="company">会社名・屋号</label>
-          <input class="form-input" type="text" id="company" name="company" placeholder="株式会社〇〇">
+          <input class="form-input" type="text" id="company" placeholder="株式会社〇〇">
         </div>
         <div class="form-group">
           <label class="form-label" for="name">お名前<span class="form-req">必須</span></label>
-          <input class="form-input" type="text" id="name" name="name" required placeholder="山田 太郎">
+          <input class="form-input" type="text" id="name" required placeholder="山田 太郎">
         </div>
         <div class="form-group">
           <label class="form-label" for="email">メールアドレス<span class="form-req">必須</span></label>
-          <input class="form-input" type="email" id="email" name="email" required placeholder="example@company.com">
+          <input class="form-input" type="email" id="email" required placeholder="example@company.com">
         </div>
         <div class="form-group">
           <label class="form-label" for="service">ご関心のあるサービス</label>
-          <select class="form-select" id="service" name="service">
+          <select class="form-select" id="service">
             <option value="">選択してください</option>
-            <option value="S-4">S-4 J-SOX内部監査外注サービス（年間顧問）</option>
-            <option value="S-5">S-5 社外監査役受託</option>
-            <option value="S-1">S-1 経営参謀アドバイザリー（月次顧問）</option>
-<option value="S-3">S-3 経営管理レビュー（単発）</option>
-            <option value="other">その他・まずは相談したい</option>
+            <option value="内部監査アウトソーシング">内部監査アウトソーシング</option>
+            <option value="J-SOX対応支援">J-SOX対応支援</option>
+            <option value="ガバナンス強化相談">ガバナンス強化相談</option>
+            <option value="その他・まずは相談したい">その他・まずは相談したい</option>
           </select>
         </div>
         <div class="form-group">
           <label class="form-label" for="message">ご相談内容<span class="form-req">必須</span></label>
-          <textarea class="form-textarea" id="message" name="message" required placeholder="現在の課題やご状況をお聞かせください。"></textarea>
+          <textarea class="form-textarea" id="message" required placeholder="現在の課題やご状況をお聞かせください。"></textarea>
         </div>
         <button type="submit" class="form-submit">送信する →</button>
         <p style="font-size:0.78rem; color:var(--text-light); line-height:1.7;">
           ご入力いただいた情報はお問い合わせへの返信のみに使用します。第三者への提供は行いません。
         </p>
       </form>
+
+      <script>
+      function sendMail(e) {
+        e.preventDefault();
+        var company = document.getElementById('company').value || '（未入力）';
+        var name    = document.getElementById('name').value;
+        var email   = document.getElementById('email').value;
+        var service = document.getElementById('service').value || '（未選択）';
+        var message = document.getElementById('message').value;
+
+        var subject = encodeURIComponent('【One\'s partners】お問い合わせ：' + name + ' 様');
+        var body = encodeURIComponent(
+          '【会社名・屋号】\n' + company + '\n\n' +
+          '【お名前】\n' + name + '\n\n' +
+          '【返信先メールアドレス】\n' + email + '\n\n' +
+          '【ご関心のあるサービス】\n' + service + '\n\n' +
+          '【ご相談内容】\n' + message + '\n\n' +
+          '---\nOne\'s partners お問い合わせフォームより'
+        );
+
+        window.location.href = 'mailto:sounds.of.blackbeauty.0830@gmail.com?subject=' + subject + '&body=' + body;
+      }
+      </script>
 
     </div>
   </div>
@@ -118,7 +131,7 @@
     <div class="footer-top">
       <div>
         <a href="index.html" class="footer-logo">One's<span> partners</span></a>
-        <p class="footer-desc">数字で経営を動かす、経営参謀。</p>
+        <p class="footer-desc">内部監査・内部統制の専門家として、<br>企業のガバナンス強化を支援します。</p>
       </div>
       <ul class="footer-nav">
         <li><a href="index.html">Home</a></li>
