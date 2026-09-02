@@ -86,35 +86,42 @@
 
           <!-- 採用コスト比較 -->
           <div style="margin-top:28px; border:2px solid var(--navy); border-radius:12px; overflow:hidden;">
-            <div style="background:var(--navy); padding:14px 24px; display:flex; justify-content:space-between; align-items:center;">
-              <span style="font-size:0.82rem; font-weight:700; color:#fff; letter-spacing:0.05em;">採用 vs 外部委託：コスト比較</span>
-              <span style="font-size:0.72rem; color:rgba(255,255,255,0.6);">専門経験者を採用した場合の試算</span>
+            <div style="background:var(--navy); padding:14px 28px; display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-size:0.85rem; font-weight:700; color:#fff; letter-spacing:0.05em;">採用 vs 外部委託：コスト比較</span>
+              <span style="font-size:0.75rem; color:rgba(255,255,255,0.55);">専門経験者を採用した場合の試算</span>
             </div>
-            <div style="padding:28px 24px; display:grid; grid-template-columns:1fr auto 1fr; gap:16px; align-items:center; background:#fff;">
-              <div style="background:var(--bg-gray); border-radius:8px; padding:20px 18px;">
-                <p style="font-size:0.72rem; color:var(--text-light); margin-bottom:10px; font-weight:600; letter-spacing:0.06em;">内部監査の専門人材を採用した場合</p>
-                <div style="font-size:0.8rem; color:var(--text-mid); line-height:2.1; margin-bottom:14px;">
+            <div style="position:relative; display:grid; grid-template-columns:1fr 1fr;">
+              <!-- VS バッジ -->
+              <div style="position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:46px; height:46px; border-radius:50%; background:#fff; border:2px solid var(--border); display:flex; align-items:center; justify-content:center; font-size:0.9rem; font-weight:700; color:var(--text-light); z-index:1; box-shadow:0 2px 8px rgba(0,0,0,0.08);">vs</div>
+              <!-- 左：採用した場合 -->
+              <div style="padding:32px 36px; background:#fafafa; border-right:1px solid var(--border);">
+                <p style="font-size:0.72rem; font-weight:700; color:var(--text-light); letter-spacing:0.08em; margin-bottom:16px; text-transform:uppercase;">内部監査の専門人材を採用した場合</p>
+                <div style="font-size:0.85rem; color:var(--text-mid); line-height:2.5; margin-bottom:20px;">
                   <p>給与（年俸）</p>
                   <p>社会保険料・各種手当（会社負担）</p>
                   <p>採用費（媒体費・エージェント等）</p>
                   <p>研修費・環境整備費</p>
                 </div>
-                <p style="font-size:1.7rem; font-weight:800; color:var(--text); line-height:1;">1,000万円<span style="font-size:1rem;">以上</span></p>
-                <p style="font-size:0.72rem; color:var(--text-light); margin-top:4px;">／年（初年度）</p>
+                <div style="border-top:1px solid var(--border); padding-top:18px;">
+                  <p style="font-size:1.9rem; font-weight:800; color:var(--text); line-height:1;">1,000万円<span style="font-size:1.05rem; font-weight:700;">以上</span></p>
+                  <p style="font-size:0.75rem; color:var(--text-light); margin-top:6px;">／年（初年度）</p>
+                </div>
               </div>
-              <div style="text-align:center; font-size:1.6rem; font-weight:700; color:var(--text-light);">vs</div>
-              <div style="background:var(--bg-blue); border-radius:8px; padding:20px 18px; border:1px solid var(--blue);">
-                <p style="font-size:0.72rem; color:var(--blue); margin-bottom:10px; font-weight:600; letter-spacing:0.06em;">One's partners 外部委託</p>
-                <div style="font-size:0.8rem; color:var(--text-mid); line-height:2.1; margin-bottom:14px;">
+              <!-- 右：One's partners -->
+              <div style="padding:32px 36px; background:var(--bg-blue);">
+                <p style="font-size:0.72rem; font-weight:700; color:var(--blue); letter-spacing:0.08em; margin-bottom:16px; text-transform:uppercase;">One's partners 外部委託</p>
+                <div style="font-size:0.85rem; color:var(--text-mid); line-height:2.5; margin-bottom:20px;">
                   <p>採用コスト　<strong style="color:var(--navy);">ゼロ</strong></p>
                   <p>社会保険料負担　<strong style="color:var(--navy);">ゼロ</strong></p>
                   <p>初期費用　<strong style="color:var(--navy);">ゼロ</strong></p>
                   <p>必要な期間のみ契約可能</p>
                 </div>
-                <p style="font-size:1rem; font-weight:700; color:var(--navy); line-height:1.7;">固定費を変動費化。<br>不要になれば解約できる。</p>
+                <div style="border-top:1px solid rgba(42,82,152,0.2); padding-top:18px;">
+                  <p style="font-size:1.05rem; font-weight:700; color:var(--navy); line-height:1.8;">固定費を変動費化。<br>不要になれば解約できる。</p>
+                </div>
               </div>
             </div>
-            <div style="background:var(--bg-gray); padding:12px 24px; font-size:0.77rem; color:var(--text-light); line-height:1.8; border-top:1px solid var(--border);">
+            <div style="background:var(--bg-gray); padding:14px 28px; font-size:0.77rem; color:var(--text-light); line-height:1.9; border-top:1px solid var(--border);">
               ※ 専門経験者採用の場合、給与＋社会保険料（会社負担）＋手当で月60〜80万円以上が相場。採用費（媒体費・エージェント費56〜93万円）・研修費・環境整備を含めた初年度コストは1,000万円超が一般的。
             </div>
           </div>
@@ -296,6 +303,16 @@
       <div>
         <a href="index.html" class="footer-logo">One's<span> partners</span></a>
         <p class="footer-desc">内部監査・内部統制の専門家として、<br>企業のガバナンス強化を支援します。</p>
+      </div>
+      <div style="flex:1; display:flex; justify-content:center; align-items:center; gap:20px;">
+        <a href="https://x.com/Onespartners" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:7px; font-size:0.8rem; color:rgba(255,255,255,0.5); text-decoration:none;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.261 5.636 5.903-5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          @Onespartners
+        </a>
+        <a href="https://www.youtube.com/@Onespartners" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:7px; font-size:0.8rem; color:rgba(255,255,255,0.5); text-decoration:none;">
+          <svg width="16" height="12" viewBox="0 0 24 17" fill="currentColor"><path d="M23.495 2.205a3.02 3.02 0 0 0-2.122-2.136C19.505 0 12 0 12 0S4.495 0 2.627.069a3.02 3.02 0 0 0-2.122 2.136C0 4.069 0 8.035 0 8.035s0 3.966.505 5.83a3.02 3.02 0 0 0 2.122 2.136C4.495 16.07 12 16.07 12 16.07s7.505 0 9.373-.07a3.02 3.02 0 0 0 2.122-2.136C24 12 24 8.035 24 8.035s0-3.966-.505-5.83zM9.545 11.44V4.63l6.272 3.405-6.272 3.404z"/></svg>
+          YouTube
+        </a>
       </div>
       <ul class="footer-nav">
         <li><a href="index.html">Home</a></li>
